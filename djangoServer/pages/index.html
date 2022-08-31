@@ -1,13 +1,24 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <h1>Vote no seu bandido preferido, mas não no {{name}}</h1>
+<h1>Vote no seu bandido preferido</h1>
 
-  <form action="add">
-    Digite o 1º número: <input type="text" name="num1">
-    Digite o 2º número: <input type="text" name="num2">
-    <input type="submit">
+<form action="add">
+  <input type="radio" name="candidato" id="ciroGomes">
+  <label for="ciroGomes"> Ciro Gomes </label><br>           \
 
-  </form>
+  <input type="radio" name="candidato" id=""> Constituinte Eymael <br>
+  <input type="radio" name="candidato" id=""> Felipe D'Avila <br>
+  <input type="radio" name="candidato" id=""> Jair Bolsonaro <br>
+  <input type="radio" name="candidato" id=""> Léo Péricles <br>
+  <input type="radio" name="candidato" id=""> Lula <br>
+  <input type="radio" name="candidato" id=""> Roberto Jefferson <br>
+  <input type="radio" name="candidato" id=""> Simone Tebet <br>
+  <input type="radio" name="candidato" id=""> Sofia Manzano <br>
+  <input type="radio" name="candidato" id=""> Soraya Thronicke <br>
+  <input type="radio" name="candidato" id=""> Vera <br><br>
+
+  <input type="submit">
+</form>
 
 {% endblock %}
